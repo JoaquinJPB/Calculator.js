@@ -8,4 +8,8 @@ const display = new Display(displayPreviousValue,displayActualValue);
 
 numbersButton.forEach(button => {
     button.addEventListener('click', () => display.addNumber(button.innerHTML))
-})
+});
+
+operatorsButton.forEach(button => {
+    button.addEventListener('click', () => display.compute(button.value))
+});
